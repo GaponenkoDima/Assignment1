@@ -63,6 +63,16 @@ namespace Assignment1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _834540ae_971f_41cf_9e75_a3b969f14f15 {
+            get {
+                object obj = ResourceManager.GetObject("834540ae-971f-41cf-9e75-a3b969f14f15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap google_dragon_logo_100x70 {
             get {
                 object obj = ResourceManager.GetObject("google-dragon-logo-100x70", resourceCulture);
@@ -76,6 +86,16 @@ namespace Assignment1.Properties {
         internal static System.Drawing.Bitmap HRLogoCMYKsmallRGB {
             get {
                 object obj = ResourceManager.GetObject("HRLogoCMYKsmallRGB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_834540ae_971f_41cf_9e75_a3b969f14f15 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_834540ae-971f-41cf-9e75-a3b969f14f15", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

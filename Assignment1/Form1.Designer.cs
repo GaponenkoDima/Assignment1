@@ -30,14 +30,14 @@
         {
             this.listView1 = new System.Windows.Forms.ListView();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.EmployeeNameTextBox = new System.Windows.Forms.TextBox();
             this.empNameLabel = new System.Windows.Forms.Label();
             this.empIdlabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.EmployeeIDTextBox = new System.Windows.Forms.TextBox();
             this.hrsWorkedlabel = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.HoursWorkedTextBox = new System.Windows.Forms.TextBox();
+            this.TotalMonthlySalexTextBox = new System.Windows.Forms.TextBox();
+            this.SalesBonusTextBox = new System.Windows.Forms.TextBox();
             this.totalSalesLabel = new System.Windows.Forms.Label();
             this.slsBonusLabel = new System.Windows.Forms.Label();
             this.CalculateButton = new System.Windows.Forms.Button();
@@ -47,6 +47,7 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.NextButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,18 +69,19 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Language";
             // 
-            // textBox1
+            // EmployeeNameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(223, 142);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 20);
-            this.textBox1.TabIndex = 5;
+            this.EmployeeNameTextBox.Location = new System.Drawing.Point(223, 163);
+            this.EmployeeNameTextBox.Name = "EmployeeNameTextBox";
+            this.EmployeeNameTextBox.Size = new System.Drawing.Size(153, 20);
+            this.EmployeeNameTextBox.TabIndex = 5;
+            this.EmployeeNameTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // empNameLabel
             // 
             this.empNameLabel.AutoSize = true;
             this.empNameLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.empNameLabel.Location = new System.Drawing.Point(29, 142);
+            this.empNameLabel.Location = new System.Drawing.Point(29, 163);
             this.empNameLabel.Name = "empNameLabel";
             this.empNameLabel.Size = new System.Drawing.Size(126, 19);
             this.empNameLabel.TabIndex = 6;
@@ -89,57 +91,60 @@
             // 
             this.empIdlabel.AutoSize = true;
             this.empIdlabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.empIdlabel.Location = new System.Drawing.Point(29, 168);
+            this.empIdlabel.Location = new System.Drawing.Point(29, 191);
             this.empIdlabel.Name = "empIdlabel";
             this.empIdlabel.Size = new System.Drawing.Size(105, 19);
             this.empIdlabel.TabIndex = 7;
             this.empIdlabel.Text = "Employee\'s ID :";
             this.empIdlabel.Click += new System.EventHandler(this.empIdlabel_Click);
             // 
-            // textBox2
+            // EmployeeIDTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(223, 168);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(153, 20);
-            this.textBox2.TabIndex = 8;
+            this.EmployeeIDTextBox.Location = new System.Drawing.Point(223, 191);
+            this.EmployeeIDTextBox.Name = "EmployeeIDTextBox";
+            this.EmployeeIDTextBox.Size = new System.Drawing.Size(153, 20);
+            this.EmployeeIDTextBox.TabIndex = 8;
+            this.EmployeeIDTextBox.TextChanged += new System.EventHandler(this.EmployeeNameIDBox_TextChanged);
             // 
             // hrsWorkedlabel
             // 
             this.hrsWorkedlabel.AutoSize = true;
             this.hrsWorkedlabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.hrsWorkedlabel.Location = new System.Drawing.Point(29, 194);
+            this.hrsWorkedlabel.Location = new System.Drawing.Point(29, 219);
             this.hrsWorkedlabel.Name = "hrsWorkedlabel";
             this.hrsWorkedlabel.Size = new System.Drawing.Size(107, 19);
             this.hrsWorkedlabel.TabIndex = 9;
             this.hrsWorkedlabel.Text = "Hours Worked :";
             // 
-            // textBox3
+            // HoursWorkedTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(223, 194);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(153, 20);
-            this.textBox3.TabIndex = 10;
+            this.HoursWorkedTextBox.Location = new System.Drawing.Point(223, 219);
+            this.HoursWorkedTextBox.Name = "HoursWorkedTextBox";
+            this.HoursWorkedTextBox.Size = new System.Drawing.Size(153, 20);
+            this.HoursWorkedTextBox.TabIndex = 10;
+            
             // 
-            // textBox4
+            // TotalMonthlySalexTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(223, 220);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(153, 20);
-            this.textBox4.TabIndex = 11;
+            this.TotalMonthlySalexTextBox.Location = new System.Drawing.Point(223, 248);
+            this.TotalMonthlySalexTextBox.Name = "TotalMonthlySalexTextBox";
+            this.TotalMonthlySalexTextBox.Size = new System.Drawing.Size(153, 20);
+            this.TotalMonthlySalexTextBox.TabIndex = 11;
+           
             // 
-            // textBox5
+            // SalesBonusTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(223, 246);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(153, 20);
-            this.textBox5.TabIndex = 12;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.SalesBonusTextBox.Location = new System.Drawing.Point(223, 277);
+            this.SalesBonusTextBox.Name = "SalesBonusTextBox";
+            this.SalesBonusTextBox.Size = new System.Drawing.Size(153, 20);
+            this.SalesBonusTextBox.TabIndex = 12;
+            this.SalesBonusTextBox.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // totalSalesLabel
             // 
             this.totalSalesLabel.AutoSize = true;
             this.totalSalesLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.totalSalesLabel.Location = new System.Drawing.Point(29, 220);
+            this.totalSalesLabel.Location = new System.Drawing.Point(29, 248);
             this.totalSalesLabel.Name = "totalSalesLabel";
             this.totalSalesLabel.Size = new System.Drawing.Size(82, 19);
             this.totalSalesLabel.TabIndex = 13;
@@ -149,7 +154,7 @@
             // 
             this.slsBonusLabel.AutoSize = true;
             this.slsBonusLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.slsBonusLabel.Location = new System.Drawing.Point(29, 246);
+            this.slsBonusLabel.Location = new System.Drawing.Point(29, 277);
             this.slsBonusLabel.Name = "slsBonusLabel";
             this.slsBonusLabel.Size = new System.Drawing.Size(90, 19);
             this.slsBonusLabel.TabIndex = 14;
@@ -164,16 +169,18 @@
             this.CalculateButton.TabIndex = 15;
             this.CalculateButton.Text = "Calculate";
             this.CalculateButton.UseVisualStyleBackColor = true;
+            this.CalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
             // PrintButton
             // 
             this.PrintButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PrintButton.Location = new System.Drawing.Point(162, 321);
+            this.PrintButton.Location = new System.Drawing.Point(122, 321);
             this.PrintButton.Name = "PrintButton";
             this.PrintButton.Size = new System.Drawing.Size(75, 31);
             this.PrintButton.TabIndex = 16;
             this.PrintButton.Text = "Print";
             this.PrintButton.UseVisualStyleBackColor = true;
+            this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
             // 
             // ClearButton
             // 
@@ -184,6 +191,7 @@
             this.ClearButton.TabIndex = 17;
             this.ClearButton.Text = "Clear";
             this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // pictureBox1
             // 
@@ -221,6 +229,7 @@
             this.radioButton2.Text = "French";
             this.radioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -234,12 +243,25 @@
             this.radioButton3.Text = "Spanish";
             this.radioButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged_1);
+            // 
+            // NextButton
+            // 
+            this.NextButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NextButton.Location = new System.Drawing.Point(211, 321);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(75, 31);
+            this.NextButton.TabIndex = 21;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // SalesBonus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(401, 364);
+            this.Controls.Add(this.NextButton);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -248,14 +270,14 @@
             this.Controls.Add(this.CalculateButton);
             this.Controls.Add(this.slsBonusLabel);
             this.Controls.Add(this.totalSalesLabel);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.SalesBonusTextBox);
+            this.Controls.Add(this.TotalMonthlySalexTextBox);
+            this.Controls.Add(this.HoursWorkedTextBox);
             this.Controls.Add(this.hrsWorkedlabel);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.EmployeeIDTextBox);
             this.Controls.Add(this.empIdlabel);
             this.Controls.Add(this.empNameLabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.EmployeeNameTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.pictureBox1);
@@ -272,14 +294,14 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox EmployeeNameTextBox;
         private System.Windows.Forms.Label empNameLabel;
         private System.Windows.Forms.Label empIdlabel;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox EmployeeIDTextBox;
         private System.Windows.Forms.Label hrsWorkedlabel;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox HoursWorkedTextBox;
+        private System.Windows.Forms.TextBox TotalMonthlySalexTextBox;
+        private System.Windows.Forms.TextBox SalesBonusTextBox;
         private System.Windows.Forms.Label totalSalesLabel;
         private System.Windows.Forms.Label slsBonusLabel;
         private System.Windows.Forms.Button CalculateButton;
@@ -288,6 +310,7 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.Button NextButton;
     }
 }
 
